@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  background-color: #7030cc;
+  font-family: "Open Sans", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.btn {
+  font-size: 1.3rem;
+  padding: 10px 20px 10px 20px;
+  background-color: #1bbcef;
+  color: #ffffff;
+  border: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.list-item {
+  margin-left: 50px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.free-trial .btn {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.saas-content h1,
+.saas-content p {
+  color: #ffffff;
+}
+.ultra-row{
+    background-color: #ffffff;
+}
+.ultra-content p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.ultra-content span{
+    font-size: .8rem ;
+    line-height: .8rem;
+}
+.ultra-desc{
+    margin-top: 20px;
+}
+.saas-content h1 {
+  font-size: 2.9rem;
+}
+.ultra-content h3{
+    font-size: 1.8rem;
+}
+.saas-content{
+    margin-top:60px;
+}
+.saas-content p {
+  font-size: 1rem;
+}
+.saas-row, .ultra-row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.ultra-content{
+    margin-top: 60px;
+}
+.ultra-content h3{
+    margin-bottom: 30px;
+}
+.ultra-content p{
+    margin-top: 20px;
+}
+.ultra-row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.saas-img img, .ultra-row img{
+    width:650px;
+}
+.feature-row{
+    background-color: #ffffff;
+}
+.feature-row h1{
+    text-align: center;
+    font-size: 2.9rem;
+}
+.card-content-1{
+    color: #ffffff;
+    background-color: #7030cc;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 15px;
+    height:120px;
+    cursor: pointer;
+}
+.card-content{
+    color: #000000;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 15px;
+    height:120px;
+    cursor: pointer;
+}
+.card-content span, .card-content-1 span{
+    font-size: .8rem;
+    text-align: center;
+}
+.card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-img img{
+    width:50px;
+    background-color: #faeaeb;
+    border-radius: 32px;
+    padding:16px;
+}
+.cards{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 45px;
+}
+.code-card, .data-card, .support-card, .secured-card{
+    box-shadow:  0px 0px 20px 2px rgba(5, 102, 234,.2);
+    border-radius: 20px;
+    width:20%;
+}
+.grey-me-row{
+    background-color: #e5e5e5;
+    height: 20vh;
+}
+#orange-arrow{
+    color:#f48e40;
+}
+#green-arrow{
+    color:#7aca3a;
+}
+#blue-arrow{
+    color: #3f9cf2;
+}
+.fa-apostrophe{
+    color: red;
+}
