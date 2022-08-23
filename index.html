@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Font-awesome -->
     <script src="https://kit.fontawesome.com/0e1cd60475.js" crossorigin="anonymous"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="bg-[#7030cc]">
     <!-- Header goes here -->
-    <header>
-        <nav class="navbar">
+    <header class="hidden md:flex flex-row justify-around bg-[#7030cc] pt-4">
             <div>
                 <img src="./SAAS landing page/Logo.png" alt="">
             </div>
-            <ul class="list">
+            <ul class="md:flex flex-row justify-around">
                 <li class="list-item">Home</li>
                 <li class="list-item">Services</li>
                 <li class="list-item">Pricing</li>
@@ -29,12 +30,35 @@
                     <button class="btn">FREE TRIAL</button>
                 </div>
             </ul>
-        </nav>
     </header>
+<!-- mobile -header -->
 
+<div class="md:hidden ">
+    <div class="bg-[#fff] flex items-center">
+        <button class="outline-none mobile-menu-button">
+            <svg class="w-6 h-12 text-gray-500" x-show="!showMenu" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+
+<header class="mobile-menu pt-4">
+    <ul class="md:flex flex-row justify-around gap-8 items-center justify-center">
+        <li class="list-item">Home</li>
+        <li class="list-item">Services</li>
+        <li class="list-item">Pricing</li>
+        <li class="list-item">Testimonials</li>
+        <li class="list-item">Blog</li>
+        <div class="free-trial">
+            <button class="btn mt-3">FREE TRIAL</button>
+        </div>
+    </ul>
+</header>
+</div>
     <!-- sections -->
 
-    <section class="saas-row">
+    <section class="bg-[#7030cc] flex flex-col md:flex-row justify-around items-center mt-12">
         <div class="saas-content">
             <h1>Codext one of
                 <br>the base system  <br>in SAAS
@@ -47,14 +71,14 @@
         <div class="saas-img">
             <img src="./SAAS landing page/30495 [Converted]-01.svg" alt="">
         </div>
-    </div>
     </section>
-    <section class="ultra-row">
-        <div class="ultra-img">
-            <img src="./SAAS landing page/Saas illustration-01.svg" alt="">
+    </div>
+    <section class="bg-white flex flex-col md:flex-row justify-around items-center">
+        <div class="">
+            <img class="w-[550px]" src="./SAAS landing page/Saas illustration-01.svg" alt="">
         </div>
         <div class="ultra-content">
-            <h3>It's helpful for operating <br> system</h3>
+            <h3 class="font-bold">It's helpful for operating <br> system</h3>
             <p> <i class="fa-solid fa-rotate-right" id="orange-arrow"></i> Ultra fast & Secure</p>
             <span class="ultra-desc">Lorem ipsum dolor sit amet consectetur
                 <br>adipisicing elit. Esse neque suscipit</span>
@@ -66,52 +90,51 @@
                 <br>adipisicing elit. Esse neque suscipit</span></span>
         </div>
     </section>
-    <section class="feature-row">
-        <div class="container">
-        <h1>We Provide Best Feature <br>For Customer</h1>
-        <div class="cards">
-            <div class="code-card">
+    <section class="bg-white">
+        <h1 class="text-3xl font-semibold text-center mt-4">We Provide Best Feature <br>For Customer</h1>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-3 cards">
+            <div class="w-[300px] code-card">
                 <div class="card-img">
-                    <img src="./SAAS landing page/web-developing.svg" alt="">
+                    <img class="w-[200px]" src="./SAAS landing page/web-developing.svg" alt="">
                 </div>
                 <div class="card-content-1">
-                    <p>Clean Code</p>
+                    <p class="text-xl font-bold">Clean Code</p>
                     <span>Lorem ipsum dolor <br> amet consectetur <br> ipsum dolor</span>
                 </div>
             </div>
-            <div class="data-card">
+            <div class="w-[300px]  data-card">
                 <div class="card-img">
-                    <img src="./SAAS landing page/data-analytics.svg" alt="">
+                    <img class="w-[200px]" src="./SAAS landing page/data-analytics.svg" alt="">
                 </div>
                 <div class="card-content">
-                    <p>Data Analytics</p>
+                    <p class="text-xl font-bold">Data Analytics</p>
                     <span>Lorem ipsum dolor <br> amet consectetur <br> ipsum dolor</span>
                 </div>
             </div>
-            <div class="secured-card">
+            <div class="w-[300px]  secured-card">
                 <div class="card-img">
-                    <img src="./SAAS landing page/secured-profile.svg" alt="">
+                    <img class="w-[200px]" src="./SAAS landing page/secured-profile.svg" alt="">
                 </div>
                 <div class="card-content">
-                    <p>Fully Secured</p>
+                    <p class="text-xl font-bold">Fully Secured</p>
                     <span>Lorem ipsum dolor <br> amet consectetur <br> ipsum dolor</span>
                 </div>
             </div>
-            <div class="support-card">
+            <div class="w-[300px]  support-card">
                 <div class="card-img">
-                    <img src="./SAAS landing page/support.svg" alt="">
+                    <img class="w-[200px]" src="./SAAS landing page/support.svg" alt="">
                 </div>
                 <div class="card-content">
-                    <p>24/7 support</p>
+                    <p class="text-xl font-bold">24/7 support</p>
                     <span>Lorem ipsum dolor <br> amet consectetur <br> ipsum dolor</span>
                 </div>
             </div>
-        </div>
         </div>
     </section>
         <section class="blank">
             <div class="grey-me-row"></div>
         </section>
-</body>
 
+        <script src="./action.js"></script>
+</body>
 </html>
